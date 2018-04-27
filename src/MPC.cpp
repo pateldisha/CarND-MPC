@@ -22,7 +22,7 @@ double dt = 0.1;
 // This is the length from front to CoG that has a similar radius.
 const double Lf = 2.67;
 // The reference velocity is set to 40 mph.
-double ref_v = 10;
+double ref_v = 40;
 
 // The solver takes all the state variables and actuator
 // variables in a singular vector. So, here when kept it like when one variable starts and another ends. 
