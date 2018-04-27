@@ -205,10 +205,10 @@ vector<double> MPC::Solve(Eigen::VectorXd state, Eigen::VectorXd coeffs) {
 
   // Upper and lower limits for acceleration
   for (int i = a_start; i < n_vars; i++) {
-    //vars_lowerbound[i] = -1.0;
-    //vars_upperbound[i] = 1.0;
-	vars_lowerbound[i] = -0.1;
-    vars_upperbound[i] = 0.1;
+    vars_lowerbound[i] = -1.0;
+    vars_upperbound[i] = 1.0;
+	//vars_lowerbound[i] = -0.1;
+    //vars_upperbound[i] = 0.1;
   }
 
   Dvector constraints_lowerbound(n_constraints);
